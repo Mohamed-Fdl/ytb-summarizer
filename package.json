@@ -1,0 +1,20 @@
+{
+  "name": "youtube-summarizer",
+  "version": "1.0.0",
+  "description": "Local tool: paste a YouTube URL, get a structured summary, track time saved.",
+  "type": "module",
+  "main": "server.js",
+  "bin": {
+    "yt-summarize": "./cli.js"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "cli": "node cli.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.3.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0"
+  }
+}

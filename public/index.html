@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YouTube Summarizer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>📺 YouTube Summarizer</h1>
+    <nav>
+      <button class="tab-btn active" data-tab="summarize">Summarize</button>
+      <button class="tab-btn" data-tab="library">Library</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="tab-summarize" class="tab-panel active">
+      <form id="summarize-form">
+        <input type="url" id="url-input" placeholder="Paste a YouTube URL..." required>
+        <button type="submit" id="submit-btn">Summarize</button>
+      </form>
+
+      <div id="status-box" class="hidden"></div>
+      <div id="result-box" class="hidden"></div>
+    </section>
+
+    <section id="tab-library" class="tab-panel">
+      <div id="stats-box" class="stats-box"></div>
+      <div id="library-list"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
